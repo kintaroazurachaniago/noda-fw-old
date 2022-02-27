@@ -3,7 +3,9 @@ Noda framework for Node js
 
 ### Instalation
 - Create project directory
+- 
     mkdir new-project
+    
 - Download or clone this repo
     git clone https://github.com/kintaroazurachaniago/noda.git
 - Navigate to this repo
