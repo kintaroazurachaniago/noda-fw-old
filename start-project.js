@@ -22,20 +22,17 @@ const
 				console.log('Writing : non-folder : ' + appname + '/' + path)
 			}
 		}
-	},
-	start_project = appname => {
-		if (!fs.existsSync(appname)) {
-			console.log('\nCreating new project ...')
-			fs.mkdirSync('./' + appname)
-			blueprints.dirname.forEach( (dirname, i) => {
-				writefile(appname, dirname, blueprints.data[i])
-			})
-			console.log('All files written successfully!')
-			fs.copyFileSync('./node_modules/bencoolen-framework/bengkulu.jpg', './' + appname + '/public/asset/images/bengkulu.jpg')
-			execSync(`cd ${appname + command}`, { stdio: 'inherit' })
-			console.log('\nReady to work! New project created successfully!')
-		}
-		else throw `${appname} already exist!`
 	}
-
-module.exports = start_project
+	
+if (!fs.existsSync(appname)) {
+	console.log('\nCreating new project ...')
+	fs.mkdirSync('./' + appname)
+	blueprints.dirname.forEach( (dirname, i) => {
+		writefile(appname, dirname, blueprints.data[i])
+	})
+	console.log('All files written successfully!')
+	fs.copyFileSync('./node_modules/bencoolen-framework/bengkulu.jpg', './' + appname + '/public/asset/images/bengkulu.jpg')
+	execSync(`cd ${appname + command}`, { stdio: 'inherit' })
+	console.log('\nReady to work! New project created successfully!')
+}
+else throw `${appname} already exist!`
