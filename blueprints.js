@@ -61,7 +61,7 @@ module.exports = {
 
 }`,
 	/* test-spa.kint */ `<!-- Filename : test-spa.kint -->
-<h1>BEN-SPA</h1>
+<h1>NODA-SPA</h1>
 <center>
 	<button class="btn btn-primary my-3" onclick="page_1()">Page 1</button>
 	<button class="btn btn-primary my-3" onclick="page_2()">Page 2</button>
@@ -651,7 +651,7 @@ module.exports = DB`,
 </body>
 </html>`,
 /* home.kint */ `<!-- Filename : home.kint -->
-<h1 class="shadow">Bencoolen</h1>
+<h1 class="shadow">Noda</h1>
 <img class="shadow shadow-lg rounded" src="public/asset/images/bengkulu.jpg" alt="test image">
 <div class="tester">
 	<p>Start testing this framework</p>
